@@ -39,12 +39,12 @@ let show = Number(fanc)
 console.log(show); // 0
  
  let some = 33
-console.log(typeof some);
+console.log(typeof some);// number
 //  change in number
  let somenumber = String(some)
-console.log(typeof somenumber);
+console.log(typeof somenumber);// string
 
- console.log(somenumber);
+ console.log(somenumber);// 33
  
 
 
