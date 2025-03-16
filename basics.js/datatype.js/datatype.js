@@ -16,7 +16,7 @@
 // Array
 // Object
 // function
-co
+// co
 // example of A
 const score = null
 const scorevalue = 200
@@ -40,15 +40,17 @@ console.log(typeof IdNumber);
 
 // // example of B 
 // ARRAY
-const Array = ["prince","lorem","html"]
+const Array = ["akshay","lorem","html"]
+console.log(Array);
+
 // OBJECT
-let my Object = {
-    name = "prine"
-    age  = 20;
-    roll = 317;
-}
+let myObject = {
+    name:  "aksjay",
+    age:  20,
+    roll:  317,// commas 
+};
 // FUNCTION
 const myfunction = function(){
 
     console.log("hello world")
-}
+};
