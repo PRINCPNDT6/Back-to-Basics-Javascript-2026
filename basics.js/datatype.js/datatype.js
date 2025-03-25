@@ -40,17 +40,19 @@ console.log(typeof IdNumber);
 
 // // example of B 
 // ARRAY
-const Array = ["akshay","lorem","html"]
+let Array = ["akshay","lorem","html"]
 console.log(Array);
 
 // OBJECT
-let myObject = {
+let myObject =  {
     name:  "aksjay",
     age:  20,
     roll:  317,// commas 
+    
 };
+// console.log(name,age,roll,);
 // FUNCTION
-const myfunction = function(){
+let myfunction = function(){
 
     console.log("hello world")
 };
