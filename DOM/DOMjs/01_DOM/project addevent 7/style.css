@@ -1,0 +1,183 @@
+#freefire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+
+   /* .bg-image {
+      width: 500px;
+      height: 300px;
+      background-image: url('freefirelobby.jpg');  
+      background-size: cover;        
+      background-position: center;   
+      background-repeat: no-repeat; 
+      width: ;
+      height: 300px ;
+
+    } */
+
+    .bg-image {
+  width: 100%;
+  height: 400px;
+  background-image: url('freefirelobby.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+
+    .right-nav img{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+
+  
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.479);
+        color: #fff;
+        font-family:Arial, Helvetica, sans-serif;
+        /* padding: 10px; */
+        align-items: end;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #uid{
+        font-size: smaller;
+        color: black;
+        margin-left: 5px;
+    }
+
+    /* #congratulations-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         margin-top: 100px;
+         margin-left: 25%;
+         position: absolute;
+         width: 300px;
+         
+    } */
+
+    #congratulations-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+           /* width: 700px; */
+
+   
+   
+}
+ 
+    #congratulations-box .congratulations{
+        background-color: rgba(0, 0, 0, 0.514);
+        padding: 10px;
+        border-radius: 8px;
+
+        /* height: 260px; */
+          display: flex;
+         flex-direction: column;
+         /* justify-content: center; */
+         align-items: center;
+         
+
+    }
+
+    .character-box .char-box{
+        height: 300px;
+        width: 20%;
+        /* width: 200px; */
+        
+        border: 2px solid;
+        border-radius: 7px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+          background-size: cover;
+            /* position: relative;  */
+            /* margin: 20px; */
+    }
+    
+    .character-box{
+        padding: 20px;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        
+    }
+
+    /* @media (min0width: 668px) {
+        flex-direction: 
+    }
+     */
+    .char-box img {
+        height: 200px;
+        width: 80%;
+        align-items: center;
+    }
+    .char-box .btn-purchase{
+        background-color: rgb(172, 172, 20);
+        padding: 6px;
+        width: 50%;
+        border-radius: 7px;
+        margin: 10px;
+        border: none;
+        /* margin-top: 30px; */
+    }
+
+    #coinimg{
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    #coinboxs{
+        display: flex;
+       
+
+    }
+ .congratulations .btn-co{
+  background-color: brown;  
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+  margin: 10px;
+  margin-top: 30px;
+  width: 80px;
+ }
+
+ .congratulations .img-congs{
+    height: 150px;
+    width: 150px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+ }
+
+ #ok{
+    background-color: chartreuse;
+}
+
+#share{
+    background-color: #fff;
+}
+#congimg{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 30px; */
+}

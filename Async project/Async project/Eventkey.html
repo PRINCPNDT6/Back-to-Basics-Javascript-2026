@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body>
+    
+<div id="insert">
+    enter any key and enjoy the magic
+</div>
+
+
+<script>
+    const insert = document.getElementById('insert');
+    window.addEventListener('keydown', (p) => {
+        insert.innerHTML = `
+ 
+        
+
+        <table>
+            <tr>
+                <th>key</th>
+                <th>keycode</th>
+                <th>code</th>
+
+            </tr>
+
+             <tr>
+                <th>${p.key}</th>
+                <th>${p.keyCode}</th>
+                <th>${p.code}</th>
+
+            </tr>   
+                 
+        </table>
+        `
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            button{
+                background-color: blue;
+                border: none;
+                border-radius: 7px;
+                padding: 10px;
+                width: 100px;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                background-color: aqua;
+                border: 2px solid;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+
+
+            }
+
+            #data{
+                margin: 30px;
+
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <div class="container">
+            <h1>Get Data From API</h1>
+            <div id="data"></div>
+            <button id="get">GET</button>
+        </div>
+
+        <script>
+
+
+            const display = document.getElementById('data');
+            const btn = document.getElementById('get');
+
+            btn.addEventListener('click', function(){
+                display.innerHTML = data.followers;
+            })
+
+            const requestUrl = 'https://api.guthub.com/users/hiteshchaudhary'
+            const xhr =new XMLHttpRequest();
+            xhr.open('GET',requestUrl )
+           
+                
+           // console.log('xhr.readystate'); // check state 
+                 
+                    console.log("this.responseText");
+                    const data = JSON.parse(this.responseText);
+                     
+                    
+                    console.log(typeof data);
+                    console.log(data.followers);
+                    console.log(data.url);
+                    
+          
+        xhr.send()
+        </script>
+    </body>
+    </html>

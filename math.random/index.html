@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Example</title>
+</head>
+<body>
+    <h1>User Input Example</h1>
+    <button onclick="getUserInput()">Input Lo</button>
+    <p id="output"></p>
+
+    <script>
+        function getUserInput() {
+            let userInput = prompt("Apna naam daalein:"+name);
+            document.getElementById("output").innerText = "Aapka naam hai: " + userInput;
+        }
+    </script>
+</body>

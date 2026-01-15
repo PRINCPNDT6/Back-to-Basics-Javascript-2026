@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01style.css">
+</head>
+<body>
+
+    <!-- <div class="FrontPage"> -->
+
+        <div class="box">
+            <div class="title-box">
+                <img src="facebook3.jpg" alt="facebook" class="facebook">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, similique?</p>
+        </div>
+    </div>
+   
+    <div class="container">
+        <h1>
+            Facebook</h1>
+        <div class="login">
+           <p> Login to Facebook</p> 
+           <input type="text" name="" id="nameF" placeholder="Enter Your Full Name:">
+           <!-- <p> Login to Facebook</p>  -->
+           <input type="text" name="" id="emailF" placeholder="Email id or phone number">
+           <input type="password" name="" id="passwordF" placeholder="password">
+           <button id="loginbtnF"><a href="index.html"> Login</a></button>
+           <div class="account">
+            <a href="#" class="a">Forgotten account</a>
+            <a href="#" class="a">Sign up your facebook</a>
+           </div>
+           <button class="creatnewaccount"><a href="SubbPage.html"> Create new account </a></button>
+        </div>
+    </div>
+<!-- </div> -->
+   <div   id="toggleA">
+            <div class="ballA" id="darkmode"></div>
+
+         </div>
+    <div class="container">
+        
+           <div class="imgdiv">
+            <img src="01_myportfolio.jpg" alt="" id="img">
+           </div>
+          <div class="btndiv">
+            <div class="h1-name">
+                <h2>Prince Sharma</h2>
+                <div class="mutul-box">
+                    <div>
+                          <img src="01_myportfolio.jpg" alt=""  class="mutul-image-1">
+                    </div>
+                    <div>
+                         <p>1 mutul friend, <span id="followers">998</span> followers</p>
+                    </div>
+                </div>
+                
+                 
+            </div>
+            <div class="btnbox">
+                 <button id="btn-Add">+Add Friend</button> <button id="btn-remove">remove</button>
+            </div>
+          </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+      
+    <script>
+        const btn = document.querySelector('#btn-Add')
+btn.addEventListener('click', function(){
+    btn.innerHTML = "Request Sent";
+        const followers = document.querySelector('#followers')
+        followers.innerHTML = "999"
+
+    
+
+});
+
+const btnremove = document.querySelector('#btn-remove');
+
+btnremove.addEventListener('click', function () {
+    const btn = document.querySelector('#btn-Add')
+    btn.innerHTML = "+Add Friend"
+
+    const followers = document.querySelector('#followers')
+    followers.innerHTML = "998"
+
+    
+   
+});
+
+////////////////////////////////////////////////////////////
+// toggle darkmode 
+     const click =   document.getElementById('toggleA')
+     
+          flag =1;
+          click.addEventListener('click', function(){
+            const boll = document.getElementById('darkmode')
+            if(flag == 1){
+                click.style.justifyContent ="right"
+                click.style.border = " 3px solid white"
+                boll.style.backgroundColor = "white"
+                document.body.style.backgroundColor = "#212121"
+                document.body.style.color = "#fff"
+                
+                
+                flag = 0
+            }
+            else{
+                click.style.justifyContent = "left"
+                click.style.border = " 3px solid black"
+                boll.style.backgroundColor = "black"
+                document.body.style.backgroundColor = "#fff"
+                document.body.style.color = "#000"
+                flag = 1;
+            }
+        })
+
+    </script>
+<!-- // const nameF = document.getElementById('nameF')
+// const passwordF = document.getElementById('passwordF')
+// const loginbtnF = document.getElementById('loginbtnF')
+
+// loginbtnF.addEventListener('click', function(){
+// const nameF = document.getElementById('nameF')
+// const name = nameF.value;
+// nameF.value =""
+
+// const passwordF = document.getElementById('passwordF')
+// const password = passwordF.value;
+// passwordF.value =""
+
+// const emailF = document.getElementById('emailF')
+// const email = emailF.value;
+// emailF.value =""
+
+
+// }) -->
+     
+</body>
+</html>

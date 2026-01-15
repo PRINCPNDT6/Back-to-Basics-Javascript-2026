@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#start{
+    margin: 10px;
+    width: 70px;
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+}
+
+#stop{
+    margin: 10px;
+    width: 70px;
+    border: none;
+    padding: 7px;
+    border-radius: 8px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+}

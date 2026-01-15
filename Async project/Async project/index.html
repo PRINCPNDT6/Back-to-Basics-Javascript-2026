@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body>
+    
+   <p>wait for 3s</p>
+    <h1>Async Project</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+ const changeText = function(){
+    let h1 = document.querySelector('h1')
+    h1.innerHTML = "First Async Project"
+ }
+
+ const stopchanges = setTimeout(changeText, 3000)
+
+ const btn = document.querySelector('#stop');
+ btn.addEventListener('click', function(){
+    clearTimeout(stopchanges)
+ })
+    </script>
+</body>
+</html>

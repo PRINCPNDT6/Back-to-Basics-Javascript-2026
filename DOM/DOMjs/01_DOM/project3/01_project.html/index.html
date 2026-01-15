@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clssList.toggle--</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+ 
+             
+        }
+
+        .color{
+            
+            .box1{
+                background-color: red;
+
+            }
+
+            .box2{
+                background-color: gray;
+            }
+
+            .box3{
+                background-color:blueviolet;
+                 
+            }
+
+            .box4{
+                background-color: green;
+            }
+        }
+        .upr-b{
+              display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .box{
+            border: 2px solid #fff;
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            box-shadow: 1px 1px 10px;
+        }
+
+        .container button{
+            padding: 10px;
+            background-color: blue;
+            border: none;
+            border-radius: 8px;
+            width: 100px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .dis{
+            display: flex;
+        }
+      
+        .toggle3{
+            border: 2px solid black;
+            /* height: 12px; */
+            width: 35px;
+            border-radius: 6px;
+            display: flex;
+
+        }
+
+        body{
+            background-color: #fff;
+            color: #121212;
+        }
+          /* Dark mode class */
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    .toggle3 .boll-1{
+         
+        /* border: 1px solid #fff; */
+            height: 10px;
+            width: 15px;
+            border-radius: 6px;
+            background-color: #121212;
+    }
+    .toggle3 .boll-2{
+        margin-left: 5px;
+         
+        /* border: 2px solid #fff; */
+            height: 10px;
+            width: 15px;
+            border-radius: 6px;
+            background-color: #fff;
+    }
+
+    .border-boll-2{
+       border: 2px solid #fff;
+            /* height: 12px; */
+            width: 39px;
+            border-radius: 9px;
+    }
+
+    #toggleA{
+        border: 3px solid;
+        height: 13px;
+        width: 39px;
+        border-radius: 9px;
+        display: flex;
+        /* justify-content: left; */
+        align-items: center;
+
+    }
+
+    #toggleA .ballA{
+        background-color: black;
+        height: 13px;
+        width: 15px;
+        border-radius: 50%;
+    }
+
+    /* #darkmodeA{
+           background-color: #121212;
+      color: white;
+       
+    } */
+
+
+        
+    </style>
+</head>
+<body >
+  
+     
+
+     <div class="border-boll-2">
+
+         <div class="toggle3" id="toggle3">
+             
+             <div class="boll-1"></div> <div class="boll-2"></div>
+             
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="upr-b">
+          <div class="color dis" id="color-c">
+                <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+          </div>
+        </div>
+        <div class="bttn">
+               <button id="btn-color-changer">Style</button>
+           </div>
+           
+         </div>
+         <div   id="toggleA">
+            <div class="ballA" id="darkmode"></div>
+
+         </div>
+
+         <script>
+          const click =   document.getElementById('toggleA')
+          flag =1;
+          click.addEventListener('click', function(){
+            const boll = document.getElementById('darkmode')
+            if(flag == 1){
+                click.style.justifyContent ="right"
+                click.style.border = " 3px solid white"
+                boll.style.backgroundColor = "white"
+                document.body.style.backgroundColor = "#212121"
+                flag = 0
+            }
+            else{
+                click.style.justifyContent = "left"
+                click.style.border = " 3px solid black"
+                boll.style.backgroundColor = "black"
+                document.body.style.backgroundColor = "#fff"
+                flag = 1;
+            }
+
+             
+
+          })
+          const btncolor =   document.getElementById('btn-color-changer')
+          btncolor.addEventListener('click', function(){
+            const boxes = document.getElementById('color-c')
+            boxes.classList.toggle('color')
+          })
+        //   const toggle3 = document.getElementById('toggle3')
+        //   toggle3.addEventListener('click', function(){
+        //   document.body.classList.toggle('dark-mode')
+        //   })
+          
+
+         </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+public {
+  version: "0.2.0",
+  configurations: [
+    {
+      type: "java",
+      name: "Debug Main",
+      request: "launch",
+      mainClass: "Main",
+      console: "integratedTerminal"
+    }
+  ]
+}
+ 

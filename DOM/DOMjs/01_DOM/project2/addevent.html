@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adevent-listner</title>
+</head>
+<body>
+    <h2 id="heading">click on submit</h2>
+    <button id="btn">submit</button>
+
+     <button id="color-changer">Click Me</button>
+
+    <script>
+        const button = document.getElementById('btn')
+        const heading = document.getElementById('heading')
+
+        button.addEventListener('click', function(){
+            heading.innerHTML = "submitted"
+        })
+
+        const btn = document.getElementById('color-changer');
+        btn.addEventListener('click', function(){
+          document.body.style.backgroundColor = "#212121"
+          heading.style.color = "#fff"
+        })
+    </script>
+</body>
+</html>

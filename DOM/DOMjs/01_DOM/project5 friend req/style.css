@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+
+
+/* toggle dark mode  */
+
+ #toggleA{
+        border: 3px solid;
+        height: 13px;
+        width: 39px;
+        border-radius: 9px;
+        display: flex;
+        /* justify-content: left; */
+        align-items: center;
+
+    }
+
+    #toggleA .ballA{
+        background-color: black;
+        height: 13px;
+        width: 15px;
+        border-radius: 50%;
+    }
+
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+
+    .btndiv{
+    font-family:sans-serif;
+    margin-left: 50px;
+}
+
+
+}
+
+#img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px;
+    margin: 20px;
+
+}
+
+.btndiv .h1-name{
+    font-family:sans-serif;
+    /* margin-left: 30px; */
+}
+.btndiv{
+    font-family:sans-serif;
+    /* margin-left: 25px; */
+}
+ .h1-name .mutul-image-1{
+     border-radius: 50%;
+     height: 40px;
+     /* border: 2px solid #fff; */
+}
+ .h1-name .mutul-image-2{
+     border-radius: 50%;
+     height: 40px;
+}
+
+.container .mutul-box{
+    display: flex;
+    align-items: center;
+
+}
+
+#btn-Add{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    width: 110px;
+    font-weight: bold;
+    background-color: blue;
+}
+#btn-remove{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    width: 110px;
+    /* background-color: blue; */
+}
+#btn-remove:hover{
+    background-color: rgba(28, 2, 2, 0.247);
+}

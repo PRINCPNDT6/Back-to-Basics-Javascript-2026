@@ -7,16 +7,21 @@ let age = 20 // number
  let vall = Object
  let prince = Symbol
 //  let nam = function , string//not define
+let bigNumber = 3434343443434534n
 
 console.log(typeof name);
 console.log(typeof age);
 console.log(typeof false);
-console.log(typeof Boolean);
-console.log(typeof null);
-console.log(typeof Object);
-console.log(typeof undefined);
-console.log(typeof Symbol);
-console.log(typeof string);
+console.log(typeof Boolean); //Function
+console.log(typeof null);  // Object
+console.log(typeof Object);  // Function
+console.log(typeof undefined); // undefined
+console.log(typeof Symbol); // function
+console.log(typeof String); // function
+console.log(typeof bigint); // undefined
+console.log(typeof Function); // function
+console.log(typeof Array);  // function , but[] => object
+
 
 
 

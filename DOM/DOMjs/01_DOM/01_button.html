@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changer</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      margin: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2 id="heading">Click button to change colors</h2>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <button onclick="changeColor()" id="btn">Change Color</button>
+
+<script>
+    
+    function changeColor(){
+        const btn = document.getElementById('btn');
+      //   btn.style.Color = 'blue';
+        btn.style.padding = '10px';
+        btn.style.fontWeight = 'bold';
+        btn.style.borderRadius = '7px';
+        btn.innerText = 'submit';
+
+        document.getElementById('heading').innerText = 'Click ho gyaa'
+        const boxes = document.getElementsByClassName("box"); // class="box" ke saare elements liye
+  Array.from(boxes).forEach((box, index) => {           // HTMLCollection → Array, phir loop
+    box.style.backgroundColor = "blue";                 // Har box ka background blue
+    box.innerText = "Box";                              // Box ke andar “Box” likh diya
+    if (index === 0) {                                  // Agar yeh pehla box hai…
+      box.style.border = "2px solid red";               // …toh red border laga do
+    }
+        });
+    }
+
+</script>
+
+</body>
+</html>

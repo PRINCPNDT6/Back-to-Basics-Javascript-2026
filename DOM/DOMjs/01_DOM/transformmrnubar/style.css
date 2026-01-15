@@ -1,0 +1,43 @@
+ 
+
+.line {
+    
+    width: 20px;
+    height: 2px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    margin: 2px;
+    margin-left: 500px;
+}
+
+.menu-bar.active .line:nth-child(1) {
+    transform: rotate(45deg) translateY(5px);
+}       
+.menu-bar.active .line:nth-child(2) {
+    opacity: 0;
+}
+.menu-bar.active .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
+
+}
+
+.sidebar{
+    height: 100%;
+    width: 40%;
+    border: 2px solid;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    background: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box; 
+    transition:   ease-out 3s;
+    z-index: 1000;
+
+
+}
+
+.menu-bar.active + .sidebar {
+    left: 0;
+}

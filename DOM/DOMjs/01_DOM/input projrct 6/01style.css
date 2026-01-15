@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.title-box{
+    width: 500px;
+
+}
+.title-box img{
+    width: 235px;
+    margin-bottom: -10px;
+}
+.title-box p{
+    color: #000;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+}
+.container{
+    text-align: center;
+
+}
+h1{
+    margin: 20px 0px;
+    color: #1877f2;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px;
+
+
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px;
+}
+p{
+  margin: 10px 0px;
+  font-size: 23px;
+  /* text-shadow:1px 1px 1px; */
+
+
+}
+input{
+    margin: 5px opx;
+    height: 40px;
+    padding: 7px;
+    margin: 3px;
+    border-radius: 3px;
+    border: none;
+    border-bottom:2px solid #126bdf;
+
+}
+button{
+    height:40px;
+    margin: 5px 0px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: #126bdf;
+}
+.a{
+ font-size: 11px;
+ text-decoration: none;
+ color: #1877f2;   
+}
+.a:hover{
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px;
+    font-size: 14px;
+}
+.facebook{
+    margin: 10px;
+    margin-left: 10px;
+}
+.creatnewaccount{
+   background-color: green; color: white;
+}
+.creatnewaccount:hover{
+    cursor: pointer;
+    /* background-color: lightgreen; */
+    
+}
+a{
+    text-decoration: none;
+}
+
+/* //////////////second page ////////////  */
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+
+
+/* toggle dark mode  */
+
+ #toggleA{
+        border: 3px solid;
+        height: 13px;
+        width: 39px;
+        border-radius: 9px;
+        display: flex;
+        /* justify-content: left; */
+        align-items: center;
+
+    }
+
+    #toggleA .ballA{
+        background-color: black;
+        height: 13px;
+        width: 15px;
+        border-radius: 50%;
+    }
+
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+
+    .btndiv{
+    font-family:sans-serif;
+    margin-left: 50px;
+}
+
+
+}
+
+#img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px;
+    margin: 20px;
+
+}
+
+.btndiv .h1-name{
+    font-family:sans-serif;
+    /* margin-left: 30px; */
+}
+.btndiv{
+    font-family:sans-serif;
+    /* margin-left: 25px; */
+}
+ .h1-name .mutul-image-1{
+     border-radius: 50%;
+     height: 40px;
+     /* border: 2px solid #fff; */
+}
+ .h1-name .mutul-image-2{
+     border-radius: 50%;
+     height: 40px;
+}
+
+.container .mutul-box{
+    display: flex;
+    align-items: center;
+
+}
+
+#btn-Add{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    width: 110px;
+    font-weight: bold;
+    background-color: blue;
+}
+#btn-remove{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    width: 110px;
+    /* background-color: blue; */
+}
+#btn-remove:hover{
+    background-color: rgba(28, 2, 2, 0.247);
+}

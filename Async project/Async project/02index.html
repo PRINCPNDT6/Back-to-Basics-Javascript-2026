@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body>
+    
+    <h1>Async Project</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+ 
+    let stopInt; // interval id ko globally declare krna hai jis se ki ye clearinterval me access ho jay line no:32
+
+    const startbtn = document.querySelector('#start');
+    startbtn.addEventListener('click', function(){
+        // Agar interval already chal raha hai toh dobara na chalayein
+        if (stopInt == null) {
+            stopInt = setInterval(function(){
+                // console.log("setInterval", Date.now());
+                document.querySelector('h1').innerHTML = "Async Project 2"
+            }, 1000);
+        }
+    });
+
+    const stopbtn = document.querySelector('#stop');
+    stopbtn.addEventListener('click', function(){
+        document.querySelector('h1').innerHTML = "Async Project ";
+        clearInterval(stopInt);
+        stopInt = null; // dobara start karne ke liye reset karein
+    });
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.my-queue-slider { position: relative; width: 100%; overflow: hidden; padding: 10px 0; background: #fff; }
+.my-slider-container { overflow: hidden; width: 100%; }
+.my-slider-track { display: flex; transition: transform 0.5s ease-in-out; }
+.my-slider-item { flex: 0 0 33.33%; box-sizing: border-box; padding: 10px; position: relative; height: 70vh; }
+.my-slider-item img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+.my-slider-btn { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); background-color: #c19a6b; color: #fff; border: none; padding: 8px 22px; border-radius: 25px; font-weight: 600; cursor: pointer; }
+.my-slider-btn:hover { background-color: #a3784f; }
+.my-slider-arrow { position: absolute; top: 50%; transform: translateY(-50%); font-size: 36px; background: rgba(0,0,0,0.4); color: #fff; border: none; cursor: pointer; padding: 8px 12px; border-radius: 50%; z-index: 10; }
+.left-arrow { left: 10px; }
+.right-arrow { right: 10px; }
+@media (max-width: 768px) { .my-slider-item { flex: 0 0 50%; height: 50vh; } .my-slider-arrow { font-size: 28px; padding: 6px 10px; } }

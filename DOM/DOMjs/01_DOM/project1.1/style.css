@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.container .box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 6px;
+    margin: 10px;
+
+}
+
+.container #red{
+    background-color: red;
+}
+
+.container #yellow{
+    background-color: yellow;
+}
+
+.container #green{
+    background-color: green;
+}
+
+.container #purple{
+    background-color: purple;
+}
