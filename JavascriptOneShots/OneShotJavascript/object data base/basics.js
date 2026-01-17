@@ -13,4 +13,4 @@
     name: "prince",
     age: 20,
     roll: 317
-};
+}:
