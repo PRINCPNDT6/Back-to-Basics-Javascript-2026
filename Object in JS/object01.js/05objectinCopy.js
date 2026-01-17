@@ -30,7 +30,7 @@
 
 // let obj2 = obj1
 
-// let obj2 = {
+//  obj2 = {
 //     name: "sharma",
 //     rollno: 331,
 // }

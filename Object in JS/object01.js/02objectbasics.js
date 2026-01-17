@@ -1,7 +1,17 @@
-//  const  tinderUser = new Object()
+ const  obj1 = new Object()
 
-// const tinderUser = {}
-//  console.log(tinderUser);
+const obj2 = {}
+
+obj1.name = "prince"
+obj2.roll = '212'
+obj2.isLoggedIn = false
+
+ console.log(obj1);
+ console.log(obj2);
+ console.log(Object.keys(obj2));
+ 
+
+
 
 const regularUser = {
     email: "prince@gmail.com",
@@ -14,6 +24,6 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullInfo.userId);
+// console.log(regularUser.fullInfo.userId.userid);
 
  
