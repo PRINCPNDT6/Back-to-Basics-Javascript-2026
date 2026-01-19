@@ -3,7 +3,7 @@ function calculateCartPrice(num1, ...num2){
 }
 
 const price = calculateCartPrice(230, 238, 432)
-// console.log(price);
+console.log(price);
 
 const user = {
     username: 'prince sharma',

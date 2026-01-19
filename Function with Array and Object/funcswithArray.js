@@ -2,7 +2,7 @@
 
 const newArray = [200, 300, 400, 500]
 
-function returnSecondValue(anyArray){
+function returnMaxValue(anyArray){
   let max = anyArray[0]
   //   let min = anyArray[0]
     anyArray.forEach(e => {
@@ -15,7 +15,7 @@ function returnSecondValue(anyArray){
     return max
  }
     
-// console.log(returnSecondValue(newArray));
+// console.log(returnSecondMaxValue(newArray));
 
 //  second max in array wih fncs 
 const secondAray = [100, 200, 300, 400]
