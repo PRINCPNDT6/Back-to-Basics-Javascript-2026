@@ -107,7 +107,7 @@ const asyncPromise = new Promise((resolve, reject) =>{
         })
 
          
-        async function AsyncFetchCode() {
+        async function consumeFetchCode() {
                     try {
                         const apidata = await fetchAsync;
                     console.log(apidata);
@@ -121,7 +121,7 @@ const asyncPromise = new Promise((resolve, reject) =>{
                         
                     }
                 }
-                AsyncFetchCode()
+                consumeFetchCode()
                 
                     
 

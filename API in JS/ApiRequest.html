@@ -62,18 +62,21 @@
             const requestUrl = 'https://api.guthub.com/users/hiteshchaudhary'
             const xhr =new XMLHttpRequest();
             xhr.open('GET',requestUrl )
-           
-                
-           // console.log('xhr.readystate'); // check state 
+           xhr.onreadystatechange = () =>{
+
+                  console.log(xhr.readyState); // check state 
+                  
+                  //    console.log('xhr.readystate'); // check state 
                  
-                    console.log("this.responseText");
-                    const data = JSON.parse(this.responseText);
-                     
-                    
-                    console.log(typeof data);
-                    console.log(data.followers);
-                    console.log(data.url);
-                    
+                  // console.log(this.responseText);
+                  const data = JSON.parse(this.responseText);
+                  
+                  
+                  console.log(typeof data);
+                  console.log(data.followers);
+                  console.log(data.url);
+                  
+                }
           
         xhr.send()
         </script>

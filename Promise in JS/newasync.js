@@ -15,20 +15,20 @@ const promise = new Promise((resolve, reject) =>{
 
 // Async Await
 
+async function userDetails(){
 try{
-     async function userDetails(){
     let User = await promise;
     console.log(User);
     let name = await User.username;
     console.log(name);
     
     
- }
 } catch(error){
     console.log(error);
     
     // console.log('ERROR', error);
     
+}
 }
 
 userDetails()

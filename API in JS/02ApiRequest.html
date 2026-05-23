@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inka use krke hi API acces hoti hai
+onreadystatechange
+
+onload
+
+fetch()
+
+async / await -->
+    
+    <div id="container">
+         
+    </div>
+
+    <script>
+        const URL = 'https://randomuser.me/api/'
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET', URL)
+        // console.log("Here");
+        // console.log(xhr.readyState);
+        xhr.onreadystatechange = function (){ // arrow fncs use ni kr skte cause of (this)
+            // console.log(xhr.readyState);
+            // if(xhr.readyState === 4){
+              // console.log('readyState === 2');
+              if(xhr.readyState !== 4) return;
+              
+              if(xhr.status === 200){
+
+                  console.log(this.responseText); 
+                  const data = JSON.parse((this.responseText))
+                  console.log(data.results[0].picture.large);
+                  console.log(xhr.status);
+                   
+                  
+                  // const container = document.getElementById('container')
+                  const img = document.createElement('img')
+                //   const img2 = document.createElement('img')
+                  
+                  img.src = data.results[0].picture.large;
+                //   img2.src = data.results[0].picture.large;
+                  container.appendChild(img)
+                //   container.appendChild(img2)
+                 }else{
+                    
+                    console.log('Error:', xhr.status);
+                    console.log(xhr.readyState);
+                    
+                    const h2 = document.createElement('h2')
+                    h2.innerHTML =`ERROR: ${ xhr.status}`;
+                    container.appendChild(h2)
+                    
+                }
+            // }
+        }
+        xhr.send();
+        
+    </script>
+</body>
+</html>

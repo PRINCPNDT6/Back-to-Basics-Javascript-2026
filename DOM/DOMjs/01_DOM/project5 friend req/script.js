@@ -23,14 +23,14 @@ btnremove.addEventListener('click', function () {
 
 ////////////////////////////////////////////////////////////
 // toggle darkmode 
-     const click =   document.getElementById('toggleA')
+     const darkmode =   document.getElementById('toggleA')
      
           flag =1;
-          click.addEventListener('click', function(){
+          darkmode.addEventListener('click', function(){
             const boll = document.getElementById('darkmode')
             if(flag == 1){
-                click.style.justifyContent ="right"
-                click.style.border = " 3px solid white"
+                darkmode.style.justifyContent ="right"
+                darkmode.style.border = " 3px solid white"
                 boll.style.backgroundColor = "white"
                 document.body.style.backgroundColor = "#212121"
                 document.body.style.color = "#fff"
@@ -39,8 +39,8 @@ btnremove.addEventListener('click', function () {
                 flag = 0
             }
             else{
-                click.style.justifyContent = "left"
-                click.style.border = " 3px solid black"
+                darkmode.style.justifyContent = "left"
+                darkmode.style.border = " 3px solid black"
                 boll.style.backgroundColor = "black"
                 document.body.style.backgroundColor = "#fff"
                 document.body.style.color = "#000"

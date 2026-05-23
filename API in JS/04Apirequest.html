@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request</title>
+
+</head>
+<body>
+            <div class="container">
+
+            </div>
+
+            <script>
+                    const URL = 'https://randomuser.me/api/'
+                    const xhr = new XMLHttpRequest();
+                    xhr.open('GET', URL)
+
+                    xhr.onload = function(){ 
+                        if(xhr.status === 200){
+                            // console.log(this.responseText);
+                            
+                            const data = JSON.parse((this.responseText))
+                            console.log(data);
+                            console.log(data.results[0].gender);
+                            
+                            
+
+                        } else {
+                            console.log('error:', xhr.status);
+                            
+
+                        }
+                    }
+                    xhr.send()
+            </script>
+</body>
+</html>
